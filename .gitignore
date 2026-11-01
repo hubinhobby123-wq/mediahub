@@ -1,0 +1,14 @@
+node_modules/
+data/
+uploads/
+*.log
+.env
+.env.*
+!.env.example
+config/
+code-backups/
+*.sqlite*
+*.db
+*.pem
+*.key
+.tmp-*/

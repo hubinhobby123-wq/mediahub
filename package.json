@@ -1,0 +1,28 @@
+{
+  "name": "mediahub-workbench",
+  "version": "0.3.1",
+  "private": true,
+  "description": "MediaHub —— 个人自媒体多平台内容分发工作台（本地运行）",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "desktop": "electron .",
+    "cli": "node cli.js",
+    "test": "node --test test/integration-test.mjs test/store-corruption-test.mjs test/login-service-test.mjs test/video-workflow-test.cjs test/service-lock-test.cjs test/content-lifecycle-test.cjs",
+    "test:legacy": "node test/adapters-test.mjs && node test/rpa-test.mjs && node test/api-test.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^2.0.1",
+    "playwright": "^1.63.0"
+  },
+  "overrides": {
+    "qs": "^6.16.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "electron": "^44.3.0"
+  }
+}
